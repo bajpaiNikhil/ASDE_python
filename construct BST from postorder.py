@@ -14,14 +14,21 @@ minIs = -sys.maxsize
 print(maxIs , minIs)
 
 
-def constructTreeUtils(post, postIndex, param, minIs, maxIs, size):
+def constructTreeUtils(post, postIndex, key, minIs, maxIs, size):
     if postIndex[0]<0:
         return None
     root = None
-    if (key)
-
-
+    if minIs < key < maxIs:
+        root = TreeNode(key)
+        postIndex[0] = postOrder[0]-1
+        if postIndex[0]>= 0:
+            root.right = constructTreeUtils(post , postIndex , post[postIndex[0]] ,key ,maxIs , size )
+            root.left = constructTreeUtils(post, postIndex, post[postIndex[0]], minIs, key, size)
+    return root
 
 def constructTree(post ,  size):
     postIndex = [size-1]
     return constructTreeUtils(post , postIndex , post[postIndex[0]] , minIs , maxIs , size)
+
+
+print(constructTree(postOrder , size))
