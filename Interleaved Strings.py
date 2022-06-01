@@ -6,6 +6,10 @@ c ="XXY"
 d = dict(Counter(a+b))
 print(d)
 
+
+
+
+
 for i in c:
     if i in d:
         d[i]-=1
