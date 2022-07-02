@@ -12,5 +12,6 @@ l = []
 for i in hashMap:
     print(i)
     a,b = i
+
     l.extend([a]*b)
 print(l)
