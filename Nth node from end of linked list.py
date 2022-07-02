@@ -35,6 +35,7 @@ head.next.next.next.next.next.next.next = Node(8)
 head.next.next.next.next.next.next.next.next = Node(9)
 
 
+
 n = 2
 print(lengthLinkedList(head))
 element = lengthLinkedList(head)+1
